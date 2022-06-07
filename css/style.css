@@ -32,19 +32,20 @@
     --index-third-font-color: #ffffff;
 }
 
-:root{ 
+:root {
     --index-icon-hover-color: #2196F3;
 }
 
-:root{
-    --index-team-icons-color: #AFB1B8;;
+:root {
+    --index-team-icons-color: #AFB1B8;
+    ;
 }
 
-:root{
+:root {
     --index-client-icon-border: #AFB1B8;
 }
 
-:root{
+:root {
     --index-header-icons-color: #757575;
 }
 
@@ -161,33 +162,42 @@ figure {
     text-decoration: none;
 }
 
-.index-header-contacts li:nth-child(2n + 3) {
-    padding-left: 35.5px;
+.index-header-li svg {
+    margin-right: 10px;
 }
 
-.index-header-contacts li:nth-child(2n + 2) {
-    padding-left: 10px;
+.index-header-contacts li:first-child {
+    padding-right: 30px;
 }
 
-.index-envelope-icon,
+.index-header-li:hover {
+    color: var(--index-link-color);
+    fill: var(--index-link-color);
+    cursor: pointer;
+}
+
+
+
+
+/* .index-envelope-icon,
 .index-smartphone-icon {
     fill: var(--index-header-icons-color);
 }
 
 .index-envelope-icon:hover,
-.index-smartphone-icon:hover{
- fill: var(--index-icon-hover-color);
+.index-smartphone-icon:hover {
+    fill: var(--index-icon-hover-color);
 }
 
 .index-envelope-icon:focus,
 .index-smartphone-icon:focus {
-fill: var(--index-icon-hover-color);
+    fill: var(--index-icon-hover-color);
 }
 
 .index-header-contacts a:hover,
 .index-header-contacts a:focus {
     color: var(--index-link-color);
-}
+} */
 
 /* --- I-N-D-E-X- -H-E-A-D-E-R --- */
 
@@ -195,7 +205,9 @@ fill: var(--index-icon-hover-color);
 
 /* --- I-N-D-E-X- -M-A-I-N --- */
 
-/* INDEX HEADER MAIN*/  /* INDEX HEADER MAIN*/  /* INDEX HEADER MAIN*/
+/* INDEX HEADER MAIN*/
+/* INDEX HEADER MAIN*/
+/* INDEX HEADER MAIN*/
 .index-main-header {
     background-image: url("../images/img10.png");
     background-size: 1600px;
@@ -233,25 +245,29 @@ fill: var(--index-icon-hover-color);
     border: none;
     margin: 30px 500px 0 500px;
 }
- 
-/* INDEX HEADER MAIN*/  /* INDEX HEADER MAIN*/  /* INDEX HEADER MAIN*/
+
+/* INDEX HEADER MAIN*/
+/* INDEX HEADER MAIN*/
+/* INDEX HEADER MAIN*/
 
 
 
-/* INDEX-LOREM*/  /* INDEX-LOREM*/  /* INDEX-LOREM*/
+/* INDEX-LOREM*/
+/* INDEX-LOREM*/
+/* INDEX-LOREM*/
 
 .index-lorem-icon {
     width: 270px;
     height: 120px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--index-bg);
+    margin-bottom: 30px;
 }
 
 .index-lorem-icon svg {
     margin: 0 auto;
-}
-
-.index-lorem-icon svg:hover{
-    fill: var(--index-icon-hover-color)
 }
 
 .index-loremipsum {
@@ -276,11 +292,15 @@ fill: var(--index-icon-hover-color);
     color: var(--index-first-font-color);
 }
 
-/* INDEX-LOREM*/  /* INDEX-LOREM*/  /* INDEX-LOREM*/
+/* INDEX-LOREM*/
+/* INDEX-LOREM*/
+/* INDEX-LOREM*/
 
 
 
-/* INDEX ABOUT LIST */  /* INDEX ABOUT LIST */  /* INDEX ABOUT LIST */
+/* INDEX ABOUT LIST */
+/* INDEX ABOUT LIST */
+/* INDEX ABOUT LIST */
 
 .index-about {
     margin: 0 auto;
@@ -313,14 +333,20 @@ fill: var(--index-icon-hover-color);
     padding-right: 30px;
 }
 
-/* INDEX ABOUT LIST */  /* INDEX ABOUT LIST */  /* INDEX ABOUT LIST */
+/* INDEX ABOUT LIST */
+/* INDEX ABOUT LIST */
+/* INDEX ABOUT LIST */
 
 
 
-/* INDEX TEAM LIST */  /* INDEX TEAM LIST */  /* INDEX TEAM LIST */
+/* INDEX TEAM LIST */
+/* INDEX TEAM LIST */
+/* INDEX TEAM LIST */
 
 .index-team-card {
-    max-height: 428px
+    max-height: 428px;
+    display: flex;
+    flex-direction: column;
 }
 
 .index-team {
@@ -397,11 +423,35 @@ fill: var(--index-icon-hover-color);
     align-items: center;
 }
 
+.index-team-icons {
+    display: flex;
+    justify-content: space-around;
+}
 
-/* INDEX TEAM LIST */  /* INDEX TEAM LIST */   /* INDEX TEAM LIST */
+.index-team-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    fill: var(--index-team-icons-color);
+}
+
+.index-team-icon:hover {
+    background-color: var(--index-link-color);
+    fill: #ffffff;
+}
+
+/* INDEX TEAM LIST */
+/* INDEX TEAM LIST */
+/* INDEX TEAM LIST */
 
 
-   /* INDEX CLIENTS */  /* INDEX CLIENTS */  /* INDEX CLIENTS */
+/* INDEX CLIENTS */
+/* INDEX CLIENTS */
+/* INDEX CLIENTS */
 .index-clients .container {
     display: flex;
     flex-direction: column;
@@ -414,25 +464,14 @@ fill: var(--index-icon-hover-color);
     align-items: space-between;
 }
 
-    .index-team-icon {
-            display: flex;
-            justify-content: space-between;
-            width: 206px;
-            height: 44px;
-            fill: var(--index-team-icons-color);
-        }
-    
-        .index-team-icon svg:hover {
-            fill: var(--index-icon-hover-color);
-        }
-    
-        .index-clients h2 {
-            font-size: 36px;
-            line-height: 1.166em;
-            font-weight: 700;
-            letter-spacing: 0.03em;
-            padding-bottom: 50px;
-        }
+.index-clients h2 {
+    font-size: 36px;
+    line-height: 1.166em;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+}
+
 .index-client-icon {
     width: 170px;
     height: 92px;
@@ -442,22 +481,26 @@ fill: var(--index-icon-hover-color);
     align-items: center;
     justify-content: center;
     fill: var(--index-team-icons-color);
+    cursor: pointer;
 }
 
-.index-client-icon:hover{
+.index-client-icon:hover {
     fill: var(--index-icon-hover-color);
+    border-color: var(--index-icon-hover-color);
 }
 
-.index-client-icon:not(:last-child){
-margin-right: 30px;
+.index-client-icon:not(:last-child) {
+    margin-right: 30px;
 }
 
-.index-clients svg{
+.index-clients svg {
     width: 106px;
     height: 60.04px;
 }
 
-  /* INDEX CLIENTS */  /* INDEX CLIENTS */  /* INDEX CLIENTS */
+/* INDEX CLIENTS */
+/* INDEX CLIENTS */
+/* INDEX CLIENTS */
 
 
 
@@ -481,10 +524,10 @@ margin-right: 30px;
     max-height: 252px;
 }
 
-.index-footer1{
+.index-footer1 {
     display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .index-bottom-logo {
@@ -568,6 +611,11 @@ margin-right: 30px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.index-footer-icon:hover {
+    background-color: var(--index-icon-hover-color);
 }
 
 .index-footer-icon:not(:last-child) {
@@ -577,14 +625,6 @@ margin-right: 30px;
 .index-footer-icon svg {
     width: 20px;
     height: 20px;
-}
-
-.index-footer-icon svg:hover{
-    fill: var(--index-icon-hover-color);
-}
-
-.index-footer-icon svg:focus {
-    fill: var(--index-icon-hover-color);
 }
 
 /* --- I-N-D-E-X- -F-O-O-T-E-R --- */
@@ -810,13 +850,13 @@ margin-right: 30px;
 
 .portfolio-footer .container {
     display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        max-height: 252px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-height: 252px;
 }
 
-.portfolio-footer1{
+.portfolio-footer1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -906,6 +946,7 @@ margin-right: 30px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .portfolio-footer-icon:not(:last-child) {
@@ -917,12 +958,12 @@ margin-right: 30px;
     height: 20px;
 }
 
-.portfolio-footer-icon svg:hover {
-    fill: var(--index-icon-hover-color);
+.portfolio-footer-icon:hover {
+    background-color: var(--index-icon-hover-color);
 }
 
-.portfolio-footer-icon svg:focus {
-    fill: var(--index-icon-hover-color);
+.portfolio-footer-icon:focus {
+    background-color: var(--index-icon-hover-color);
 }
 
 /* --- -P-O-R-T-F-O-L-I-O- -F-O-O-T-E-R --- */
