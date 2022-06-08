@@ -186,36 +186,13 @@ figure {
 }
 
 
-
-
-/* .index-envelope-icon,
-.index-smartphone-icon {
-    fill: var(--index-header-icons-color);
-}
-
-.index-envelope-icon:hover,
-.index-smartphone-icon:hover {
-    fill: var(--index-icon-hover-color);
-}
-
-.index-envelope-icon:focus,
-.index-smartphone-icon:focus {
-    fill: var(--index-icon-hover-color);
-}
-
-.index-header-contacts a:hover,
-.index-header-contacts a:focus {
-    color: var(--index-link-color);
-} */
-
 /* --- I-N-D-E-X- -H-E-A-D-E-R --- */
 
 
 
 /* --- I-N-D-E-X- -M-A-I-N --- */
 
-/* INDEX HEADER MAIN*/
-/* INDEX HEADER MAIN*/
+
 /* INDEX HEADER MAIN*/
 .index-main-header {
     background-image: url("../images/img10.png");
@@ -256,13 +233,11 @@ figure {
 }
 
 /* INDEX HEADER MAIN*/
-/* INDEX HEADER MAIN*/
-/* INDEX HEADER MAIN*/
 
 
 
-/* INDEX-LOREM*/
-/* INDEX-LOREM*/
+
+
 /* INDEX-LOREM*/
 
 .index-lorem-icon {
@@ -302,13 +277,12 @@ figure {
 }
 
 /* INDEX-LOREM*/
-/* INDEX-LOREM*/
-/* INDEX-LOREM*/
 
 
 
-/* INDEX ABOUT LIST */
-/* INDEX ABOUT LIST */
+
+
+
 /* INDEX ABOUT LIST */
 
 .index-about {
@@ -342,10 +316,11 @@ figure {
     padding-right: 30px;
 }
 
+.index-about-list .about-sign {
+    position: relative;
+}
 
-
-
-.index-about-list .sign div{
+.index-about-list .about-sign div{
     position: absolute;
     bottom: 0;
     background-color: var(--index-first-bg);
@@ -354,11 +329,7 @@ figure {
     height: 70px;
 }
 
-.index-about-list .sign{
-    position: relative;
-}
-
-.index-about-list li p {
+.index-about-list .about-sign p {
     position: absolute;
     bottom: 0px;
     z-index: 1000;
@@ -378,13 +349,11 @@ figure {
 }
 
 /* INDEX ABOUT LIST */
-/* INDEX ABOUT LIST */
-/* INDEX ABOUT LIST */
 
 
 
-/* INDEX TEAM LIST */
-/* INDEX TEAM LIST */
+
+
 /* INDEX TEAM LIST */
 
 .index-team-card {
@@ -490,12 +459,12 @@ figure {
 }
 
 /* INDEX TEAM LIST */
-/* INDEX TEAM LIST */
-/* INDEX TEAM LIST */
 
 
-/* INDEX CLIENTS */
-/* INDEX CLIENTS */
+
+
+
+
 /* INDEX CLIENTS */
 .index-clients .container {
     display: flex;
@@ -545,8 +514,7 @@ figure {
 }
 
 /* INDEX CLIENTS */
-/* INDEX CLIENTS */
-/* INDEX CLIENTS */
+
 
 
 
@@ -774,39 +742,26 @@ figure {
     font-weight: 500;
     letter-spacing: 0.02em;
     display: flex;
+    align-items: center;
 }
 
-.portfolio-header-contacts li:nth-child(2n + 3) {
-    padding-left: 35.5px;
+.portfolio-header-contacts li svg{
+    margin-right: 10px;
 }
 
-.portfolio-header-contacts li:nth-child(2n + 2) {
-    padding-left: 10px;
+.portfolio-header-contacts li:first-child{
+    margin-right: 30px;
 }
 
-.portfolio-envelope-icon,
-.portfolio-smartphone-icon {
-    fill: var(--index-header-icons-color);
-}
-
-.portfolio-envelope-icon:hover,
-.portfolio-smartphone-icon:hover {
+.portfolio-header-icon:hover{
+    color: var(--index-icon-hover-color);
     fill: var(--index-icon-hover-color);
-}
-
-.portfolio-envelope-icon:focus,
-.portfolio-smartphone-icon:focus {
-    fill: var(--index-icon-hover-color);
+        transition: cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
 .portfolio-header-contacts a {
     color: var(--portfolio-first-font-color);
     text-decoration: none;
-}
-
-.portfolio-header-contacts a:hover,
-.portfolio-header-contacts a:focus {
-    color: var(--index-link-color);
 }
 
 /* --- -P-O-R-T-F-O-L-I-O- -H-E-A-D-E-R --- */
@@ -866,6 +821,46 @@ figure {
 .portfolio-signedphotos-list li {
     margin-bottom: 30px;
 }
+
+
+
+
+.portfolio-card{
+    position: relative;
+}
+
+.portfolio-sign-div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.portfolio-sign-div:hover{
+    position: absolute;
+    display: block;
+    z-index: 1001;
+    background-color: #212121;
+    cursor: pointer;
+    width: 370px;
+    height: 294px;
+    background: rgba(33, 150, 243, 0.9);
+}
+
+.portfolio-sign-p{
+    display: none;
+    position: absolute;
+        width: 100%;
+            height: 100%;
+        color: red;
+}
+
+.portfolio-sign-p:hover{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
 
 .portfolio-figcaption {
     display: flex;
