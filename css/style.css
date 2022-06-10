@@ -827,20 +827,32 @@ figure {
 
 
 .img-portfolio{
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
+}
+
+.img-portfolio:hover{
+    position: relative;
+    cursor: pointer;
+    overflow: visible;
 }
 
 .box{
     position: absolute;
-    color: green;
+    background-color: green;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: 293.991px;
+    top: 100%;
+        transform: translatey(-140%);
+    overflow: visible;
 }
 
 .box:hover{
-    transform: translatex(0);
+    position: absolute;
+    transform: translatey(-60%);
+    transition: transform 500ms;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 
