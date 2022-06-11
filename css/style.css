@@ -832,29 +832,31 @@ figure {
 }
 
 .img-portfolio:hover{
-    position: relative;
+    /* position: relative;
     cursor: pointer;
-    overflow: visible;
+    overflow: visible; */
+
+}
+
+.img-portfolio:hover .box{
+    background-color: green;
+transform: translatey(0);
 }
 
 .box{
     position: absolute;
-    background-color: green;
+    transform: translatey(100%);
+    transition: transform 250ms ease;
     width: 100%;
-    height: 293.991px;
-    top: 100%;
-        transform: translatey(-140%);
-    overflow: visible;
+    height: 75%;
+top: 0;
+left: 0;
+opacity: 0.8;
 }
 
-.box:hover{
-    position: absolute;
-    transform: translatey(-60%);
-    transition: transform 500ms;
-    cursor: pointer;
-    overflow: hidden;
+.box p {
+    transform: translatey(-3000%);
 }
-
 
 
 
