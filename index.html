@@ -56,7 +56,7 @@
             <div class="container">
                 <h1 class="index-h1">EFEKTYWNE ROZWIĄZANIA</h1>
                 <h1 class="index-h1">DLA WASZEGO BIZNESU</h1>
-                <button class="index-button" type="button">Zamów usługę</button>
+                <button class="index-button" type="button" data-modal-open>Zamów usługę</button>
             </div>
         </section>
         <section class="index-main1 section">
@@ -344,6 +344,12 @@
             </section>
         </div>
     </footer>
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <button class="index-close-button" type="button" data-modal-close>X</button>
+                        </div>
+                    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

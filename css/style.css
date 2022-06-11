@@ -230,8 +230,37 @@ figure {
     background-color: var(--index-link-color);
     border: none;
     margin: 30px 500px 0 500px;
+    position: relative;
 }
 
+.modal {
+    width: 528px;
+    height: 581px;
+    background-color: green;
+    position: absolute;
+    z-index: 1000;
+    overflow: hidden;
+    display: none;
+}
+
+.index-button:hover .modal{
+position: absolute;
+cursor: default;
+        background-color: red;
+        display: flex;
+}
+
+
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.index-close-button{
+    position: absolute;
+    cursor: pointer;
+}
 /* INDEX HEADER MAIN*/
 
 
