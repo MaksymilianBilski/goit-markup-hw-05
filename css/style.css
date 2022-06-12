@@ -143,6 +143,12 @@ figure {
     color: inherit;
 }
 
+.index-active:hover::after {
+    content: "";
+    display: block;
+    border-top: 5px solid red;
+}
+
 .index-upper-link:hover,
 .index-upper-link:focus {
     color: var(--index-link-color);
@@ -247,13 +253,14 @@ figure {
     border-radius: 4px;
 }
 
-.is-hidden{
+.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
 
-.close-btn{
+.index-close-btn {
+    position: absolute;
     cursor: pointer;
     right: 0%;
     top: 0%;
@@ -271,6 +278,7 @@ figure {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 }
+
 /* INDEX HEADER MAIN*/
 
 
@@ -767,6 +775,13 @@ figure {
     line-height: 1.142em;
     text-decoration: none;
     color: inherit;
+}
+
+.portfolio-active:hover::after {
+    content: "";
+    display: block;
+    border-top: 5px solid red;
+    bottom: 500;
 }
 
 .portfolio-upper-link:hover,
