@@ -128,6 +128,7 @@ figure {
 .index-nav {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .index-nav li:not(:last-child) {
@@ -144,9 +145,13 @@ figure {
 }
 
 .index-active:hover::after {
+    position: absolute;
     content: "";
     display: block;
-    border-top: 5px solid red;
+    width: 53px;
+    border-top: 4px solid var(--portfolio-link-color);
+    z-index: 1000;
+    top: 47px;
 }
 
 .index-upper-link:hover,
@@ -762,6 +767,7 @@ figure {
     display: flex;
     justify-content: center;
     margin-right: 300px;
+    position: relative;
 }
 
 .portfolio-nav li:not(:last-child) {
@@ -778,10 +784,13 @@ figure {
 }
 
 .portfolio-active:hover::after {
+    position: absolute;
     content: "";
     display: block;
-    border-top: 5px solid red;
-    bottom: 500;
+    width: 58px;
+    border-top: 4px solid var(--portfolio-link-color);
+    z-index: 1000;
+    top: 45px;
 }
 
 .portfolio-upper-link:hover,
