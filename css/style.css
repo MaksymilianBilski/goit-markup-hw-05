@@ -151,7 +151,7 @@ figure {
     width: 53px;
     border-top: 4px solid var(--portfolio-link-color);
     z-index: 1000;
-    top: 47px;
+    top: 46.5px;
 }
 
 .index-upper-link:hover,
